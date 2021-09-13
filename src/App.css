@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial,sans-serif;
+}
+
+header {
+	background-image: url(img/banner.jpg);
+	padding: 10%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: white;
+	padding-left: 25%;
+	position: relative;
+	z-index: 1;
+}
+
+hr {
+	margin: 20px 0;
+	width: 90%;
+	height: 5px;
+	background-color: white;
+	border-radius: 3px;
+	border-style: solid;
+}
+
+.header_flex {
+	display: flex;
+	width: 80%;
+	min-width: 500px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_flex p {
+	text-transform: uppercase;
+	width: 73%;
+}
+
+.header_flex a {
+	display: block; 
+	color: white;
+	text-decoration: none;
+	width: 27%;	
+	border: 2px solid white;
+	padding: 2%;
+} 
+
+.background {
+	z-index: -1;
+	background-color: darkblue;
+	position: absolute; 
+	width: 100%; 
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0.3;
+}
+
+.photo {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,350px);
+} 
+
+.item {
+	display: flex;
+	flex-direction: column;
+	background-size: cover;
+	position: relative;
+	color: white;
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.item hr {
+	width: 60%;
+}
+
+.item:nth-child(1) {
+	background-image: url(img/pic01.jpg);
+}
+
+.item:nth-child(2) {
+	background-image: url(img/pic02.jpg);
+	grid-column: span 2;
+}
+
+.item:nth-child(3) {
+	background-image: url(img/pic03.jpg);
+	grid-column: span 2;
+}
+
+.item:nth-child(4) {
+	background-image: url(img/pic04.jpg);
+}
+
+.item:nth-child(5) {
+	background-image: url(img/pic05.jpg);
+}
+
+.item:nth-child(6) {
+	background-image: url(img/pic06.jpg);
+	grid-column: span 2;
+}
+
+.shadow1 {
+	background-color: rgba(122,192,216,0.7);
+}
+
+
+.shadow2 {
+	background-color: rgba(143,134,193,0.7);
+}
+
+.shadow3 {
+	background-color: rgba(229,146,137,0.7);
+}
+
+.shadow4 {
+	background-color: rgba(223,182,144,0.7);
+}
+
+.shadow5 {
+	background-color: rgba(139, 161, 218, 0.7);
+}
+
+.shadow6 {
+	background-color: rgba(121, 174,150, 0.7);
+}
+
+.shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.shadow:hover {
+	background-color: unset; 
+	transition-duration: 1s;
+}
+
+.about_me {
+	background-color: #424774;
+	color: white;
+	padding: 7% 15%;
+}
+
+.about_me h2 {
+	text-align: center;
+}
+
+.about_me a {
+	margin-top: 30px;
+	display: block; 
+	color: white;
+	text-decoration: none;
+	width: 27%;	
+	border: 2px solid white;
+	padding: 2%;
+} 
+
+.text_me {
+	padding: 7% 15%;
+	background-color: #364167;
+	color: white;
+}
+
+.text_me h2 {
+	text-align: center;
+}
+
+form {
+	display: grid;
+	grid-template-areas: 
+	"name_ mail_"
+	"name mail"
+	"message_."
+	"message message"
+	"submit .";
+	grid-gap: 7px;
+}
+
+#name {
+	grid-area: name;
+}
+
+#mail {
+	grid-area: mail;
+}
+
+#message {
+	grid-area: message;
+}
+
+#name1 {
+	grid-area: name_;
+}
+
+#mail1 {
+	grid-area: mail_;
+}
+
+#message1 {
+	grid-area: message_;
+}
+
+#submit {
+	grid-area: submit;
+	background-color: white;
+	text-transform: uppercase;
+}
+
+label {
+	letter-spacing: 5px;
+}
+
+input, textarea {
+	background-color: #424774;
+	border: none;
+	padding: 5px;
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
